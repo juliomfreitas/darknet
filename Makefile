@@ -1,11 +1,17 @@
-GPU=1
-CUDNN=1
+GPU=0
+CUDNN=0
 CUDNN_HALF=0
-OPENCV=0
+OPENCV=1
 AVX=0
 OPENMP=0
 LIBSO=0
 ZED_CAMERA=0
+
+# will
+GPU=1
+OPENCV=0
+
+
 
 # set GPU=1 and CUDNN=1 to speedup on GPU
 # set CUDNN_HALF=1 to further speedup 3 x times (Mixed-precision on Tensor Cores) GPU: Volta, Xavier, Turing and higher
@@ -174,3 +180,11 @@ setchmod:
 
 clean:
 	rm -rf $(OBJS) $(EXEC) $(LIBNAMESO) $(APPNAMESO)
+
+## jsdarknet utils
+
+train:
+	./darknet detector train train-dogcat/cat-dog-obj.data train-dogcat/network-architecture.cfg train-dogcat/darknet53.conv.74
+
+init:
+	wget https://pjreddie.com/media/files/darknet53.conv.74 train-dogcat/
