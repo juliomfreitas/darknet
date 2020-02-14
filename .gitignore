@@ -56,3 +56,5 @@ uselib
 uselib_track
 darknet
 train-dogcat/darknet53.conv.74
+bad.list
+predictions.jpg

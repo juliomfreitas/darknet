@@ -1,5 +1,5 @@
 classes = 2
 train = train-dogcat/dataset/train.txt
-valid = train-dogcat/dataset/train.txt
+valid = train-dogcat/dataset/test.txt
 names = train-dogcat/cat-dog-obj.names
 backup = train-dogcat/weights
