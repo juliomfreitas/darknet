@@ -1,5 +1,5 @@
 classes = 1
-train = rubik/dataset/train.txt
-valid = rubik/dataset/test.txt
-names = rubik/cat-dog-obj.names
+train = rubik/train.txt
+valid = rubik/test.txt
+names = rubik/project.names
 backup = rubik
