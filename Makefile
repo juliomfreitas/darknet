@@ -188,3 +188,7 @@ train:
 
 init:
 	wget https://pjreddie.com/media/files/darknet53.conv.74 train-dogcat/
+
+get_weigth_file:
+	ssh jc@10.0.10.5 "cp /home/jc/jcdarknet/train-dogcat/weights/network-architecture_last.weights /home/jc"
+	scp jc@10.0.10.5:/home/jc/network-architecture_last.weights train-dogcat/weights
