@@ -55,6 +55,6 @@ include/darknet/
 uselib
 uselib_track
 darknet
-src/train-dogcat/darknet53.conv.74
+darknet53.conv.74
 bad.list
 predictions.jpg
