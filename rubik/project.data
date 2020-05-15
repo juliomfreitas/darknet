@@ -1,5 +1,0 @@
-classes = 1
-train = rubik/train.txt
-valid = rubik/test.txt
-names = rubik/project.names
-backup = rubik
